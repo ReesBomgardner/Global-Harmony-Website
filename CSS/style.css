@@ -5,6 +5,7 @@ img {
     margin-bottom: 5px;
     width:20%;
 }
+
 h1 {
     text-align: center;
 }
@@ -15,6 +16,7 @@ body {
 }
 
 nav a {
+    text-align: center;
     margin: 0 15px;
     text-decoration: none;
     color: #000;
