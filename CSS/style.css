@@ -15,11 +15,15 @@ body {
     line-height: 1.6;
 }
 
-nav a {
+.top_nav {
     text-align: center;
-    margin: 0 15px;
-    text-decoration: none;
     color: #000;
+
+}
+
+a {
+    display: inline;
+    margin-right: 50px;
 }
 
 .container {
