@@ -1,71 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>Global Harmony</title>
-    <link rel="stylesheet" href="CSS/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
-<body>
-    <header>
-        <img src="Assets/photos/Logo/Global-Harmony-Logo.png" alt="Global Harmony Logo">
-        <h1>Global Harmony</h1>
-        
-    </header>
-    <nav class = "top_nav">
-        <a href="#about">About Us</a>
-        <a href="#gallery">Photo Gallery</a>
-        <a href="#upcoming-events">Upcoming Events</a>
-        <a href="#past-events">Past Events</a>
-        <a href="#calendar">Calendar</a>
-    </nav>
-    <div class="container">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to Global Harmony! We are a group of international and domestic students who come together to create an environment for international students to feel comfortable and welcome on campus. We share cultures from around the world through various events that resemble holidays, festivals, or traditions. Join us to make the most of your college experience!</p>
-        </section>
-        
-        <section id="gallery" class="gallery">
-            <h2>Photo Gallery</h2>
-            <div class="gallery-grid">
-                <img src="Assets/photos/photo1.jpg" alt="Photo 1">
-                <img src="Assets/photos/photo2.jpg" alt="Photo 2">
+    <body>
+        <header>
+            <div class="navbar">
+                 <div class="logo">
+                    <img src="Assets/photos/Logo/Global-Harmony-Logo.png" alt="Logo">
+                    <p id = GlobalHarmony>Global Harmony</p>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="menu" id="menu">
+                    <a href="#wwd">What We Do</a>
+                    <a href="#events">Events</a>
+                    <a href="#calendar">Calendar</a>
+                    <a href="#gallery">Gallery</a>
+                 </div>
             </div>
-        </section>
-        
-        <section id="upcoming-events" class="events">
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Fall Lantern Festival - October 18th, 2024, 6 PM - 8 PM, Student Center Ballroom (Second Floor)</li>
-                <li>Event 2 - Date, Time, Location</li>
-                <li>Event 3 - Date, Time, Location</li>
-            </ul>
-        </section>
-        
-        <section id="past-events" class="past-events">
-            <h2>Past Events</h2>
-            <ul>
-                <li>International Festival - September 6th, 2024, 6 PM - 8 PM, University Green (Near Bell Tower)</li>
-                <li>Event 2 - Date, Time, Location</li>
-                <li>Event 3 - Date, Time, Location</li>
-            </ul>
-        </section>
-        
-        <section id="calendar">
-            <h2>Calendar</h2>
-            <p>Reserve your study tables and tutoring sessions for international students below:</p>
-            <div class="calendar-container">
-                
-                <iframe src="calendar-link" title="Calendar" width="100%" height="500px"></iframe>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Global Harmony. All rights reserved.</p>
-        <div class="social-media">
-            <a href = "https://bsu.campuslabs.com/engage/organization/globalharmony" target="_blank">Benny Link</a>
-            <a href = "https://instagram.com/bsu_globalharmony" target="_blank">Instagram</a>
+        </header>
+
+        <div class = "layout1">
+            <section>
+                <img src = "Assets/photos/Gallery/layout1.png" alt = "Picture at Emens Auditorium at Ball State University showcasing a Songkran Festivale that Global Harmony presented" width = "1150" height = "300">
+            </section>
         </div>
+
+        <div class = "WhatWeDo">
+            <section id = "wwd">
+                <h2>What We Do</h2>
+                <p id = wwdMessage>We are a group of international and domestic students who come together to create an environment for international students to feel comfortable and welcome on campus. We share cultures from around the world through various events that resemble holidays, festivals, or traditions. We even have study tables every monday from 6:15 - 7:15 in Bracken Library. Check out the calendar below for more. Join us to make the most of your college experience!</p>
+            </section>
+        </div>
+        
+        <section id = "events">
+            <h2 id = upE>Upcoming Events</h2>
+            <p>1.  Fall Lantern Festival - October 18th, 2024, 6 PM - 8 PM, Student Center Ballroom (Second Floor)</p>
+            <p>2.  To be determined!</p>
+            <p>3.  To be determined!</p>
+
+            <h2 id = paE>Past Events</h2>
+            <p>1.  International Festival - September 6th, 2024, 6 PM - 8 PM, University Green (Near Bell Tower)</p>
+            <p>2.  Event 2 - Date, Time, Location</p>
+            <p>3.  Event 3 - Date, Time, Location</p>
+        </section>
+        
+        <section id = "calendar">
+            <h2>Calendar</h2>
+            <div class = "calendar-container">
+                <iframe src = "https://calendar.google.com/calendar/embed?src=137f489bfd91d07a1e5edc2690aafc06ba54bacf4e102a93051c7f33be0f4e75%40group.calendar.google.com&ctz=America%2FIndiana%2FIndianapolis" style = "border: 0" width = "800" height = "600" frameborder = "0" scrolling = "no" title = "Global Harmony Calendar"></iframe>
+            </div>
+        </section>
+
+        <div class = "Gallery">
+                <a target = "_blank" href = "Assets/photos/Gallery/CNY24.jpeg">
+                    <img src = "Assets/photos/Gallery/CNY24.jpeg" alt = "CNY24">
+                </a>
+                <div class = "description">Staff members and voulenteers from Global Harmy performed at our local Chinese community celebration of the Lunar New Year celebration on Febuary 9th, 2024!</div>
+            </div>
+
+        <div class = "Gallery">
+            <section id = gallery>
+            <a target = "_blank" href = "Assets/photos/Gallery/Diwali23.jpeg">
+                <img src = "Assets/photos/Gallery/Diwali23.jpeg" alt = "Diwali23">
+            </a>
+            <div class = "description">Staff members and voulenteers from Global Harmy hosted a Divali Celebration in Emens auditorium at Ball State University on November 3rd, 2023!</div>
+            </section>
+        </div>
+
+        <div class = "Gallery">
+            <a target = "_blank" href = "Assets/photos/Gallery/Songkran24.jpeg">
+                <img src = "Assets/photos/Gallery/Songkran24.jpeg" alt = "Songkran24">
+            </a>
+            <div class = "description">Staff members and voulenteers from Global Harmy hosted a Songkran celebration in Emens auditorium at Ball State University on April 12th, 2024!</div>
+        </div>
+
+    <footer>
+        <div class = "socialMedia">
+            <a href = "https://instagram.com/bsu_globalharmony" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/photos/Footer-Link/Instagram.png" alt="Instagram hyperlink" width = "30" height = "30">
+            </a>
+            <a href = "https://bsu.campuslabs.com/engage/organization/globalharmony" target="_blank" rel="noopener noreferrer">
+                <img src="Assets/photos/Footer-Link/BennyLink.png" alt="BennyLink hyperlink" width = "90" height = "30">
+            </a>
+        </div>
+        <p class = "rights">&copy; 2024 Global Harmony. All rights reserved.</p>
     </footer>
-</body>
+    <script src = "JS/app.js"></script>
+    </body>
 </html>
